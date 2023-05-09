@@ -21,7 +21,7 @@ function MoviePlaylist() {
         return (
             <li key={movie}>
                 {movie}
-                <button onClick={handleMovieRemove} className="button is-danger">
+                <button onClick={() =>handleMovieRemove(movie)} className="button is-danger">
                     X
                 </button>
             </li>
