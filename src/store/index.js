@@ -19,4 +19,15 @@ const store = configureStore({
     }
 });
 
-console.log(store);
+store.dispatch({
+    type: 'song/addSong',
+    payload: 'New song!!!'
+});
+
+console.log(store.getState());
+console.log(songsSlice.actions.addSong("One song!!!"))
+
+store.dispatch(
+    songsSlice.actions.addSong("One song!!!")
+)
+console.log(store.getState())
