@@ -5,6 +5,10 @@ const songsSlice = createSlice({
     initialState: [],
     reducers: {
         addSong(state, action) {
+            // State is not the big state object
+            // in the store
+            // it is the piece of state managed
+            //by this reducer
             state.push(action.payload);
         },
         removeSong(state, action) {
