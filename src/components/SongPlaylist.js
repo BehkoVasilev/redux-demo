@@ -13,7 +13,6 @@ function SongPlaylist() {
     dispatch(addSong(song));
   };
   const handleSongRemove = (song) => {
-    console.log(song);
     dispatch(removeSong(song))
   };
 
