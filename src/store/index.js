@@ -31,3 +31,5 @@ store.dispatch(
     songsSlice.actions.addSong("One song!!!")
 )
 console.log(store.getState())
+
+export { store };
