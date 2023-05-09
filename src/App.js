@@ -1,3 +1,4 @@
+import { createRandomMovie } from "./data";
 import "./styles.css";
 
 function App() {
