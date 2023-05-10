@@ -14,7 +14,15 @@ const songsSlice = createSlice({
         removeSong(state, action) {
             const index = state.indexOf(action.payload);
             state.splice(index, 1);
-        }
+        },
+    },
+    extraReducers(builder) {
+        //instead 'movie/reset' using of 
+        //movieSlice.actions.reset.toString() protects against typo
+        //short way movieSlice.actions.reset
+        builder.addCase(movieSlice.actions.reset, (state, action) => {
+            return [];
+        });
     }
 });
 
