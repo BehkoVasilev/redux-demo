@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { songReducer, addSong, removeSong } from './splices/SongList';
-import { movieReducer, addMovie, removeMovie } from './splices/MoviesList';
+import { songReducer, addSong, removeSong } from './slices/SongList';
+import { movieReducer, addMovie, removeMovie } from './slices/MoviesList';
 import { reset } from './actions';
 
 const store = configureStore({
